@@ -70,3 +70,17 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# 1. On définit où est pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+
+# 2. On l'ajoute au PATH (pour que le terminal le trouve)
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PATH:$PYENV_ROOT/bin"
+
+# 3. On initialise pyenv
+eval "$(pyenv init -)"
+
+# 4. On initialise le plugin virtualenv
+eval "$(pyenv virtualenv-init -)"
