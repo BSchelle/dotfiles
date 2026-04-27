@@ -84,3 +84,9 @@ eval "$(pyenv init -)"
 
 # 4. On initialise le plugin virtualenv
 eval "$(pyenv virtualenv-init -)"
+export GOOGLE_APPLICATION_CREDENTIALS=/home/bschelle/code/BSchelle/gcp/cellular-datum-475012-a8-cb16ed894223.json
+
+. "$HOME/.local/bin/env"
+
+# Added by LM Studio CLI tool (lms)
+export PATH="$PATH:/home/bschelle/.lmstudio/bin"

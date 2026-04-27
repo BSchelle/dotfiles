@@ -84,4 +84,8 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.panel.defaultLocation": "right",
     "git.autofetch": true,
+    "workbench.editorAssociations": {
+      "*.md": "vscode.markdown.preview.editor"
+    },
+    "explorer.confirmDragAndDrop": false,
 }
