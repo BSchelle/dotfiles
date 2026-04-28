@@ -90,3 +90,4 @@ export GOOGLE_APPLICATION_CREDENTIALS=/home/bschelle/code/BSchelle/gcp/cellular-
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/home/bschelle/.lmstudio/bin"
+eval "$(direnv hook zsh)"
